@@ -1,5 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import selenium.webdriver.common.keys
+
+username = 'lezs76@gmail.com'
+password = 'Raining!1'
 
 #Test one - find via google
 driver = webdriver.Chrome("C:\webdrivers\chromedriver.exe")
@@ -28,9 +32,9 @@ driver.get("https://try.typesift.com/login")
 assert "TypeSift" in driver.title
 
 #username
-driver.find_element_by_name("username").send_keys("lezs76@gmail.com")
+driver.find_element_by_name("username").send_keys(username)
 #Password
-driver.find_element_by_name("password").send_keys("Raining!1")
+driver.find_element_by_name("password").send_keys(password)
 #Click Login
 driver.find_element_by_xpath("/html/body/app/login/div[2]/div/div[3]/button").click()
 
