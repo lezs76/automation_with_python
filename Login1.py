@@ -5,6 +5,8 @@ import selenium.webdriver.common.keys
 username = 'lezs76@gmail.com'
 password = 'Raining!1'
 
+class(object)
+
 #username
 driver.find_element_by_name("username").send_keys(username)
 #Password
